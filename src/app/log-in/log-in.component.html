@@ -1,0 +1,42 @@
+<body>
+    <div class="cont">
+     <div class="title" *ngIf="!serv.isUser">
+        Log in now
+     </div>
+     <div class="title" *ngIf="serv.isUser">
+        You are already logged in
+     </div>
+     <div class="container" *ngIf="!serv.isUser">
+ 
+         
+         <form (submit)=onSubmit(form) #form="ngForm" autocomplete="off">        
+           <div class="group">      
+             <input type="email" required [(ngModel)]="email" name="email">
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Email</label>
+           </div>
+             
+           <div class="group">      
+             <input type="password" required [(ngModel)]="password" name="password">
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Password</label>
+           </div>
+           <div class="sub">      
+             <input type="submit" value="Log in">
+           </div>
+ 
+           
+         </form>
+         <div class="already">
+            Not a xxxxx user yet? <a  [routerLink]="['/register']">Sign up</a> now
+         </div>
+       
+         
+       </div>
+       
+     </div>
+<simple-notifications></simple-notifications> 
+
+ </body>

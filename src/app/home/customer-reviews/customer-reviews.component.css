@@ -1,0 +1,52 @@
+* {
+  overflow-y: hidden;
+  font-family: "Londrina Solid", cursive !important;
+}
+.cont {
+  margin: 0 10%;
+  height: 700px;
+  margin-bottom: 200px;
+  padding-top: 40px;
+}
+.title {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.items {
+  display: flex;
+  margin-top: 10%;
+}
+.item {
+  flex: 1;
+  height: 600px;
+  margin: 0 1%;
+}
+.customer-name {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+.stars {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 0px 0;
+  height: 45px;
+}
+.stars img {
+  width: 30px;
+  height: 35px;
+  cursor: pointer;
+}
+.stars img:hover {
+  width: 35px;
+  height: 40px;
+}
+.review {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: rgb(73, 73, 73);
+  text-align: center;
+  margin: 0 7%;
+}

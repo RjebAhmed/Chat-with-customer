@@ -1,0 +1,35 @@
+<nav class="navbar"> 
+    <div class="brandLogo">
+        <ul class="ulC">
+            <li class="liC"><a href="">xxxxxxxxx</a></li>
+
+        </ul>
+    </div>
+    <div class="pages">
+        <ul class="ulC">
+
+            <li class="liC"><a [routerLink]="['/']">Home</a></li>
+            <div class="dropdown">
+                <li class="dropbtn"><a href="">Services</a> </li>
+                <div class="dropdown-content">
+                    <a [routerLink]="['/services/get-chat-room']" [routerLinkActive]="['selected']">Get A Chatting Room</a>
+
+                    <a [routerLink]="['/services/hire-chat-agents']" [routerLinkActive]="['selected']">Hire Chat Agents</a>
+
+                </div>
+            </div>
+            <li class=" liC"><a [routerLink]="['/why']" [routerLinkActive]="['selected']">Why xxxxxx</a></li>
+            <li class="liC"><a href="">Pricing</a></li>
+
+
+        </ul>
+
+    </div>
+    <div class="sl">
+        <ul class="ulC">
+            <li class="liC "><a  [routerLink]="['/signin']" >Log in</a></li>
+            <li class="back liC"><a  [routerLink]="['/register']">Sign up</a></li>
+
+        </ul>
+    </div>
+</nav>

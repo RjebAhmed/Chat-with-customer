@@ -1,0 +1,21 @@
+<div class="cont">
+    <div class="title">
+        You may be wondering
+    </div>
+    <div class="faq">
+        <div #selector *ngFor="let item of mylist; let i = index" [attr.data-index]="i">
+            <div (click)="hideme(i)" class="faq-head">
+                <div class="text">
+                    {{item.faqHead}}
+                </div>
+                <div class="image">
+                    <img src="https://img.icons8.com/android/24/000000/plus.png" />
+                </div>
+            </div>
+            <div class="faq-body" [class.show]="i ===0">
+                {{item.faqBody}}
+            </div>
+        </div>
+
+    </div>
+</div>

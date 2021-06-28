@@ -1,0 +1,108 @@
+nav {
+  font-family: "Londrina Solid", cursive !important;
+
+  width: 100%;
+  height: 130px;
+  display: flex;
+  padding: 0 10%;
+  position: fixed;
+  z-index: 999999999;
+  background-color: #3e3582;
+}
+.brandLogo {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f64c72;
+}
+
+.pages {
+  flex: 5.1;
+  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ulC {
+  font-size: 2rem;
+  list-style-type: none;
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.pages a:hover {
+  color: #f64c72;
+  transition: 0.3s;
+}
+.pages .liC {
+  margin: 0 40px;
+}
+.sl {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.back {
+  margin-left: 50px;
+  padding: 7px 30px;
+  background-color: #fac917;
+  border-radius: 35px;
+  border: 0.7px solid rgba(0, 0, 0, 0.575);
+}
+.back:hover {
+  background-color: #f64c72;
+  transition: 0.5s;
+  color: white !important;
+}
+
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  font-size: 2rem;
+  border: none;
+  margin: 0 40px;
+}
+
+.dropdown {
+  position: relative;
+
+  font-size: 2rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  min-width: max-content;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.navbar-inverse {
+  background-color: white;
+  box-shadow: 0 3px 0 0 rgba(121, 120, 120, 0.404);
+}
+.navbar-inverse a {
+  color: black;
+}
+.navbar-inverse .dropdown-content {
+  background-color: white;
+}
+.selected {
+  color: #f64c72 !important;
+}

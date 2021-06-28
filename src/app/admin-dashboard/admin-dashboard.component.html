@@ -1,0 +1,37 @@
+<app-dashboard-nav></app-dashboard-nav>
+<div class="container" >
+  <div class="title" >
+    Add agents
+ </div>
+         
+    <form  autocomplete="off" #form="ngForm" (submit)=onSubmit(form)>        
+      <div class="group">      
+        <input type="text" required name="userID" [(ngModel)]="userID">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>User ID</label>
+      </div>
+      <div class="group">      
+        <input type="text" required name="url" [(ngModel)]="url">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>photo url</label>
+      </div>     
+        
+      <div class="group">      
+        <input type="password"  name="password" [(ngModel)]="password">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Password</label>
+      </div>
+      <div class="sub">      
+        <input type="submit" value="Register Agent">
+      </div>
+
+      
+    </form>
+   
+<simple-notifications></simple-notifications> 
+  
+    
+  </div>

@@ -1,0 +1,88 @@
+* {
+  font-family: "Londrina Solid", cursive;
+}
+.d-flex img {
+  width: 65%;
+  z-index: 999;
+}
+.cont2 {
+  width: 100%;
+  background: linear-gradient(180deg, #eeeceb 0%, #fff 100%);
+  position: relative;
+  top: -300px;
+}
+.text {
+  position: relative;
+  top: 550px;
+  left: 18%;
+  width: 30%;
+}
+.text h2 {
+  font-size: 42px;
+  line-height: 50px;
+}
+.faq {
+  position: relative;
+  top: 600px;
+  margin: 0 17.5%;
+  display: flex;
+}
+.steps {
+  flex: 2;
+}
+.images {
+  flex: 2;
+}
+.images img {
+height: 600px;
+width: 90%;
+}
+
+.faq-element {
+  width: 100%;
+  display: flex;
+  margin: 5px 0;
+}
+.faq-num {
+  height: 75px;
+
+  flex: 1;
+  font-size: 32px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-faq {
+  flex: 7;
+}
+
+.faq-title {
+  font-size: 28px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  height: 75px;
+  cursor: pointer;
+}
+.faq-arrow {
+  height: 75px;
+
+  flex: 1;
+  font-size: 22px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-content {
+  color: #606469;
+  font-size: 22px;
+  line-height: 26px;
+  display: none;
+}
+.show {
+  display: flex;
+}

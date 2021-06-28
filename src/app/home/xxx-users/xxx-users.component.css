@@ -1,0 +1,57 @@
+* {
+  font-family: "Londrina Solid", cursive !important;
+}
+.cont {
+  margin-top: 300px;
+}
+.cont h3 {
+  font-size: 4rem;
+  text-align: center;
+  max-width: 40%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cont2 {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 900px;
+  display: flex;
+}
+.companies {
+  flex: 1;
+  height: 100%;
+}
+.countries {
+  flex: 1;
+  height: 100%;
+}
+.companies img {
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.countries img {
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.num {
+  max-width: 80%;
+  position: relative;
+  font-size: 5.5rem;
+  display: flex;
+  justify-content: center;
+}
+.name {
+  max-width: 80%;
+  position: relative;
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: center;
+  color: rgba(43, 40, 40, 0.788);
+}

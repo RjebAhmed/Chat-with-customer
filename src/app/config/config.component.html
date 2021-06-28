@@ -1,0 +1,43 @@
+<div class="cont">
+  <div class="title">Customise your chat-room</div>
+  <div class="container">
+    <form #test="ngForm"></form>
+
+    <div class="group">
+      <input class="inn" type="text" [(ngModel)]="msg" />
+
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Chat-room link</label>
+      <h2 class="live">
+        www.XXXXX.com/chat/<span class="blue">{{ msg }}</span>
+      </h2>
+    </div>
+    <div class="logo">
+      <h2>Add your logo</h2>
+      <input type="file" title="Chose a photo" />
+    </div>
+
+    <div class="options">
+      <div
+        #selector
+        class="option"
+        (click)="selectMe(i)"
+        *ngFor="let item of myList; let i = index"
+        [attr.data-index]="i"
+      >
+        <div class="option-title">
+          {{ item.optionName }}
+          <span class="price">(+{{ item.optionPrice }} $)</span>
+        </div>
+
+        <div class="check">✔</div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="btn1">total : {{ total }}</button>
+      <button class="btn2" (click)="startNow()">Start Now</button>
+    </div>
+  </div>
+</div>
+<!-- <button (click)="success()" >succccccccessssssssssss</button> -->

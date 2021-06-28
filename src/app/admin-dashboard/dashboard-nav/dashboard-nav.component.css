@@ -1,0 +1,32 @@
+* {
+    font-family: "Londrina Solid", cursive !important;
+  }
+nav{
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    padding: 0 20%;
+    align-items: center;
+    font-size: 1.7rem;
+    margin-bottom: 100px;
+}
+ul {
+    list-style-type: none;
+
+  }
+  .log-out{
+      display: flex;
+      justify-content: flex-end;
+      flex: 5;
+  }
+  .navs{
+display: flex;
+justify-content: space-between;
+flex: 7;
+  }
+  a{
+    text-decoration: inherit;
+    color: inherit;
+    
+}

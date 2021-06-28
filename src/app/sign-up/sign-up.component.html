@@ -1,0 +1,53 @@
+<body>
+    <div class="cont">
+     <div class="title" *ngIf="!serv.isUser">
+       Create a new account
+   
+     </div>
+     <div class="title" *ngIf="serv.isUser">
+      You are already logged 
+
+  
+    </div>
+ 
+     <div class="container" *ngIf="!serv.isUser">
+         
+        <form (submit)=onSubmit(form) #form="ngForm" autocomplete="off">
+           
+           <div class="group">      
+             <input type="text" required [(ngModel)]="companyName" name="companyName" >
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Company name</label>
+           </div>
+             
+           <div class="group">      
+             <input class="in" type="text" required [(ngModel)]="email" name="email" >
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Email</label>
+           </div>
+           <div class="group" style="margin-bottom: 15px;">      
+             <input type="password" required [(ngModel)]="password" name="password">
+             <span class="highlight"></span>
+             <span class="bar"></span>
+             <label>Password</label>
+           </div>
+           <h2 class="errorMsg">{{errMsg}}</h2>
+           <div class="sub">      
+             <input type="submit" value="Register" >
+           </div>
+ 
+           
+         </form>
+         <div class="already">
+           Already got an account?  now
+         </div>
+       
+         
+       </div>
+       
+     </div>
+
+ </body>
+ <simple-notifications></simple-notifications> 

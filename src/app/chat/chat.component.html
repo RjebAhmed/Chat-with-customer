@@ -1,0 +1,106 @@
+<body>
+    <div class="cont">
+  
+        <div class="people">
+            <div class="top">
+                <h2 *ngIf="!who">customers </h2>
+                <h2 *ngIf="who">Agents </h2>
+                <button class="te" (click)="test()">
+                    <img alt="new group"  src="https://img.icons8.com/ios-filled/50/000000/group-foreground-selected.png"/>
+                </button>
+            </div>
+            <div class="new-group">New group</div>
+            <div class="search">
+                <input type="text" placeholder="Search chats">
+            </div>
+            <div *ngIf="who" class="people-list">
+       
+                <div #selector (click)="selected(i)" (click)="getConv(agent)"  class="pp" *ngFor="let agent of agents; let i = index" [attr.data-index]="i">
+                    <div class="photo">
+
+                        <img src="{{agent.url}}" alt="errrraaa">
+                    </div>
+                    <div class="name-lastMsg">
+                        <h2>{{agent.userID}}</h2>
+                        <p></p>
+                    </div>
+                    <div class="time">
+                       
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="!who" class="people-list">
+              
+                <div #selector (click)="selected(i)" (click)="getConv(cust)"  class="pp" *ngFor="let cust of allCustomers; let i = index" [attr.data-index]="i">
+                    <div class="photo">
+                         <img src="{{cust.url}}" alt="errrraaa">
+                    </div>
+                    <div class="name-lastMsg">
+                        <h2>{{cust.customerID}}</h2>
+                        <p> </p>
+                    </div>
+                    <div class="time">
+                       
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="chat">
+            <div class="head">
+                <div class="rec">
+                    <img src="{{im}}" alt="">
+                    <h2>{{name}}</h2>
+                </div>
+                <div class="options">
+                    <button><img src="https://img.icons8.com/plasticine/100/000000/phone.png"/></button>
+                    <button><img src="https://img.icons8.com/material-rounded/24/fa314a/no-video--v2.png"/></button>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div *ngIf="who" class="chat-body">
+                <div *ngFor="let msg of chat">
+                    <div class="msg-left" *ngIf="!msg.sender" >
+                        <img src="https://www.analyticsindiamag.com/wp-content/uploads/2019/02/gan2.jpeg" alt="">
+                         <p> {{msg.msg}}</p>
+                    </div>
+                    <div class="msg-right" *ngIf="msg.sender" >
+                        <p> {{msg.msg}}</p>
+                         <img src="https://www.analyticsindiamag.com/wp-content/uploads/2019/02/gan2.jpeg" alt="">
+    
+                    </div>
+                </div>
+                
+             </div>
+             <div *ngIf="!who" class="chat-body">
+                <div *ngFor="let msg of chat">
+                    <div class="msg-left" *ngIf="msg.sender" >
+                        <img src="https://www.analyticsindiamag.com/wp-content/uploads/2019/02/gan2.jpeg" alt="">
+                         <p> {{msg.msg}}</p>
+                    </div>
+                    <div class="msg-right" *ngIf="!msg.sender" >
+                        <p> {{msg.msg}}</p>
+                         <img src="https://www.analyticsindiamag.com/wp-content/uploads/2019/02/gan2.jpeg" alt="">
+    
+                    </div>
+                </div>
+                
+             </div>
+
+
+
+            <div class="send-msg">
+                <button class="emoji"><img src="https://img.icons8.com/android/48/000000/happy.png"/></button>
+                <input [(ngModel)]="msg" type="text" class="inp" placeholder="Write a message">
+                <button class="sendf"><img src="https://img.icons8.com/fluent-systems-regular/48/000000/--add-document.png"/></button>
+                <button (click)="addMsg()" style="background-color: #0a80ff;" class="send"><img src="https://img.icons8.com/wired/64/ffffff/sent.png"/></button>
+            </div>
+        </div>
+        
+    </div>
+</body>

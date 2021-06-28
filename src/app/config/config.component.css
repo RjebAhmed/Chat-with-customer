@@ -1,0 +1,210 @@
+* {
+  font-family: "Londrina Solid", cursive !important;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 180px;
+  font-size: 3rem;
+  margin-bottom: 120px;
+}
+.container {
+  width: 35%;
+  display: block;
+  padding: 10px 50px 50px;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+.inn {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #757575;
+  background-color: transparent;
+}
+.inn:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+  color: rgba(180, 173, 173, 0.753);
+  font-size: 1.5rem;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.inn:focus ~ label,
+.inn:valid ~ label {
+  top: -20px;
+  font-size: 1.5rem;
+  color: #3e3582;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: #3e3582;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+  left: 50%;
+}
+.bar:after {
+  right: 50%;
+}
+
+/* active state */
+.inn:focus ~ .bar:before,
+.inn:focus ~ .bar:after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+.inn:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #3e3582;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #3e3582;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #3e3582;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+.blue {
+  color: #3e3582;
+}
+.live {
+  font-size: 1.8rem;
+  margin-top: 7px;
+}
+.logo h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #3e3582;
+}
+.options {
+  margin-top: 50px;
+}
+.option {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  box-shadow: rgb(0 0 0 / 12%) 0 3px 13px 1px;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.option-title {
+  width: 88%;
+  height: 100%;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+}
+.price {
+  margin-left: 10px;
+  color: #fac917;
+}
+.check {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  color: white;
+}
+.selected {
+  background-color: #fac917;
+  color: white;
+}
+.selected .price {
+  color: black;
+}
+.selected .check {
+  border: 3px solid white;
+}
+.total button {
+  width: 100%;
+  height: 100px;
+  background-color: teal;
+  border: solid 3px black;
+}
+.buttons {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  height: 00px;
+  margin-bottom: 200px;
+}
+.buttons button {
+  width: 50%;
+  height: 70px;
+  margin: 0 2px;
+  font-size: 1.5rem;
+}
+.btn1 {
+  background-color: #fac917;
+  border: none;
+  cursor: auto;
+}

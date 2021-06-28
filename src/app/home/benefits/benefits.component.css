@@ -1,0 +1,52 @@
+.cont {
+  margin: 0 8%;
+  font-family: "Londrina Solid", cursive !important;
+}
+.box {
+  width: 50%;
+  height: 700px;
+  border: 3px solid #d4d4d7;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.box2 {
+  margin: 0 5%;
+}
+.box:hover {
+  border: 3px solid #fac917;
+  transition: 1s;
+}
+.box img {
+  width: 35%;
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+  top: 10%;
+}
+.box h3 {
+  font-size: 3rem;
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+  top: 12%;
+  text-align: center;
+  max-width: 60%;
+}
+
+.details {
+  display: flex;
+  position: relative;
+  top: 20%;
+}
+.details li {
+  flex: 14;
+  list-style: none;
+  font-size: 1.7rem;
+  color: rgb(73, 73, 73);
+}
+.details span {
+  flex: 1;
+  margin-right: 3%;
+  margin-left: 3%;
+  font-size: 2rem;
+}

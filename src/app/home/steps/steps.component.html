@@ -1,0 +1,36 @@
+<div class="d-flex justify-content-center">
+    <img src="https://firebasestorage.googleapis.com/v0/b/chat-cdb22.appspot.com/o/chat.jpg?alt=media&token=2dbd1d84-cf81-44ec-87f4-17236d412d5b"
+        alt="errrrrrrrrrrrrrrrrr">
+</div>
+<div class="cont2">
+    <div class="text">
+        <h2> Steps to start a conversation with your custumers.</h2>
+    </div>
+    <div class="faq">
+
+        <div class="steps">
+            <div   class="faq-element" *ngFor="let item of faqs; let i = index" [attr.data-index]="i">
+                <div class="faq-num">
+                    {{i+1}}.
+                </div>
+                <div class="faq-faq">
+                    <div class="faq-title" (click)="hideme(i)" >
+                            {{item.faqTitle}}
+                    </div>
+                    <div class="faq-content" #select [class.show]="i ===0" >
+                        {{item.faqBody}}
+
+                    </div>
+                </div>
+                <div class="faq-arrow">
+                    ▼
+                </div>
+            </div>
+            
+        </div>
+        <div class="images">
+            <img #myimg  src="https://firebasestorage.googleapis.com/v0/b/chat-cdb22.appspot.com/o/im1.png?alt=media&token=a53d06c8-9cfb-4426-b0db-92c9ebc5343a"
+                alt="errrrrrrrrrrrrrrrrrrrrrrrrrrrraaaaa">
+        </div>
+    </div>
+</div>
